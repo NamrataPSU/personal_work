@@ -13,10 +13,10 @@ Source: `data/raw/yc_companies_all.json` (see `data/raw/PROVENANCE.md`). Profile
 | slug | str (str) | 0 | 0.0 | 0 | 0 | 5999 |
 | former_names | object (list) | 0 | 0.0 | 0 | 3091 | 2898 |
 | small_logo_thumb_url | str (str) | 0 | 0.0 | 0 | 0 | 5371 |
-| website | str (str) | 1 | 0.02 | 0 | 0 | 5962 |
-| all_locations | str (str) | 0 | 0.0 | 0 | 0 | 732 |
-| long_description | str (str) | 30 | 0.5 | 0 | 0 | 5599 |
-| one_liner | str (str) | 0 | 0.0 | 0 | 0 | 5838 |
+| website | str (str) | 1 | 0.02 | 33 | 0 | 5962 |
+| all_locations | str (str) | 0 | 0.0 | 229 | 0 | 732 |
+| long_description | str (str) | 30 | 0.5 | 370 | 0 | 5599 |
+| one_liner | str (str) | 0 | 0.0 | 161 | 0 | 5838 |
 | team_size | float64 (float) | 104 | 1.73 | 0 | 0 | 201 |
 | industry | str (str) | 0 | 0.0 | 0 | 0 | 9 |
 | subindustry | str (str) | 0 | 0.0 | 0 | 0 | 59 |
@@ -347,5 +347,5 @@ missing: 0 | min: 2010-01-17 09:03:33 | max: 2026-07-01 23:28:48 | pre-2005 (sus
 - Batch label formats present: ['Fall', 'Spring', 'Summer', 'Unspecified', 'Winter'] + year (long form only in this dump); 'Unspecified' batch rows: 1.
 - Empty strings vs nulls: `one_liner` empty-string rows: 161, `long_description` empty: 370, `website` empty: 33, `all_locations` empty: 229 — missing text is encoded as '' not null.
 - team_size: 104 null and 125 zero values (zero for many dead companies).
-- Companies with former_names: 2908.
-- launched_at is 0/epoch-adjacent or null for some rows (see section 5).
+- Companies with former_names: 2908 (~half the dataset; mostly legal-name variants, not true pivots — treat with care).
+- launched_at min is 2010-01-17 even though batches go back to 2005 — it records when the company was ADDED/LAUNCHED on the YC directory, not founding date; unreliable as a company-age feature for pre-2010 batches.

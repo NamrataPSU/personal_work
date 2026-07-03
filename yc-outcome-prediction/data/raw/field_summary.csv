@@ -4,10 +4,10 @@ name,str (str),0,0.0,0,0,5904,'CircuitHub'; 'iCracked'; '42Floors',identifier
 slug,str (str),0,0.0,0,0,5999,'circuithub'; 'icracked'; '42floors',identifier
 former_names,object (list),0,0.0,0,3091,2898,[]; ['Nou Data']; ['Pair'],feature-candidate (weak; pivot signal)
 small_logo_thumb_url,str (str),0,0.0,0,0,5371,'https://bookface-images.s3.amazonaws.com/small_logos/5967d0; '/company/thumb/missing.png'; 'https://bookface-images.s3.amazonaws.com/small_logos/33ee27,identifier/URL
-website,str (str),1,0.02,0,0,5962,'https://circuithub.com'; 'http://icracked.com'; 'http://42floors.com',identifier/URL (presence/liveness could be outcome-adjacent)
-all_locations,str (str),0,0.0,0,0,732,"'London, England, United Kingdom'; 'Redwood City, CA, USA'; 'San Francisco, CA, USA; Remote'",feature-candidate (location at listing; mostly stable)
-long_description,str (str),30,0.5,0,0,5599,"'CircuitHub offers on-demand electronics manufacturing power; 'Founded in 2010 and located in the heart of Silicon Valley,; ""*Acquired by Knotel in 2018\r\n\r\n42Floors was founded in ",feature-candidate (text; describes CURRENT product — mild leakage risk)
-one_liner,str (str),0,0.0,0,0,5838,'On-Demand Electronics Manufacturing'; 'On-demand smartphone repair in 3 countries and launching sm; 'We make it easy to search for office space.',feature-candidate (text; same caveat)
+website,str (str),1,0.02,33,0,5962,'https://circuithub.com'; 'http://icracked.com'; 'http://42floors.com',identifier/URL (presence/liveness could be outcome-adjacent)
+all_locations,str (str),0,0.0,229,0,732,"'London, England, United Kingdom'; 'Redwood City, CA, USA'; 'San Francisco, CA, USA; Remote'",feature-candidate (location at listing; mostly stable)
+long_description,str (str),30,0.5,370,0,5599,"'CircuitHub offers on-demand electronics manufacturing power; 'Founded in 2010 and located in the heart of Silicon Valley,; ""*Acquired by Knotel in 2018\r\n\r\n42Floors was founded in ",feature-candidate (text; describes CURRENT product — mild leakage risk)
+one_liner,str (str),0,0.0,161,0,5838,'On-Demand Electronics Manufacturing'; 'On-demand smartphone repair in 3 countries and launching sm; 'We make it easy to search for office space.',feature-candidate (text; same caveat)
 team_size,float64 (float),104,1.73,0,0,201,58.0; 51.0; 60.0,"LEAKY/outcome-adjacent (CURRENT headcount reflects outcome, not starting state)"
 industry,str (str),0,0.0,0,0,9,'Industrials'; 'Consumer'; 'Real Estate and Construction',feature-candidate
 subindustry,str (str),0,0.0,0,0,59,'Industrials -> Manufacturing and Robotics'; 'Consumer -> Home and Personal'; 'Real Estate and Construction -> Housing and Real Estate',feature-candidate
