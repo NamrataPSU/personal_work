@@ -1,0 +1,316 @@
+{
+  "holdout_base_auc": 0.5664,
+  "gain_by_source_feature": {
+    "subindustry": 21.69,
+    "is_remote": 11.99,
+    "industry": 11.71,
+    "tag_b2b": 9.82,
+    "primary_region": 8.6,
+    "has_location": 6.13,
+    "batch_season": 4.47,
+    "tag_saas": 3.82,
+    "tag_fintech": 3.0,
+    "long_description_len": 2.92,
+    "is_us": 2.84,
+    "is_international": 2.78,
+    "cohort_size": 2.74,
+    "one_liner_len": 2.64,
+    "is_bay_area": 2.61,
+    "tag_analytics": 2.58,
+    "n_tags": 2.37,
+    "has_former_names": 2.14,
+    "tag_marketplace": 1.91
+  },
+  "permutation_auc_drop": {
+    "tag_saas": {
+      "mean": 0.01965,
+      "std": 0.0039
+    },
+    "long_description_len": {
+      "mean": 0.01415,
+      "std": 0.01246
+    },
+    "industry": {
+      "mean": 0.01213,
+      "std": 0.00441
+    },
+    "one_liner_len": {
+      "mean": 0.00906,
+      "std": 0.00891
+    },
+    "is_remote": {
+      "mean": 0.00553,
+      "std": 0.0138
+    },
+    "tag_fintech": {
+      "mean": 0.00315,
+      "std": 0.00571
+    },
+    "tag_b2b": {
+      "mean": 0.00187,
+      "std": 0.0006
+    },
+    "tag_marketplace": {
+      "mean": 0.00163,
+      "std": 0.00061
+    },
+    "subindustry": {
+      "mean": 0.00156,
+      "std": 0.0027
+    },
+    "is_bay_area": {
+      "mean": 0.00052,
+      "std": 0.00043
+    },
+    "primary_region": {
+      "mean": 0.00037,
+      "std": 0.00291
+    },
+    "is_international": {
+      "mean": 0.00012,
+      "std": 0.00095
+    },
+    "is_us": {
+      "mean": 3e-05,
+      "std": 0.00098
+    },
+    "cohort_size": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "n_industries": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_ai": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_developer_tools": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_consumer": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_machine_learning": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_healthcare": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_e_commerce": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_health_tech": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_education": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_productivity": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_open_source": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_ai_assistant": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_payments": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_climate": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_api": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_biotech": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_hardware": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_logistics": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_sales": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_enterprise_software": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "tag_digital_health": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "has_description": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "nonprofit": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "app_video_public": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "demo_day_video_public": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "has_location": {
+      "mean": -1e-05,
+      "std": 0.00019
+    },
+    "has_former_names": {
+      "mean": -0.00016,
+      "std": 0.00099
+    },
+    "tag_analytics": {
+      "mean": -0.00047,
+      "std": 0.0012
+    },
+    "n_tags": {
+      "mean": -0.00245,
+      "std": 0.00343
+    },
+    "batch_season": {
+      "mean": -0.00274,
+      "std": 0.00095
+    }
+  },
+  "direction_top5": {
+    "tag_saas": [
+      {
+        "g": "0",
+        "n": 368,
+        "pos_rate": 0.337,
+        "mean_pred": 0.5220999717712402
+      },
+      {
+        "g": "1",
+        "n": 155,
+        "pos_rate": 0.5548,
+        "mean_pred": 0.6880000233650208
+      }
+    ],
+    "long_description_len": [
+      {
+        "g": "low",
+        "n": 175,
+        "pos_rate": 0.3771,
+        "mean_pred": 0.4147999882698059
+      },
+      {
+        "g": "mid",
+        "n": 174,
+        "pos_rate": 0.4138,
+        "mean_pred": 0.6067000031471252
+      },
+      {
+        "g": "high",
+        "n": 174,
+        "pos_rate": 0.4138,
+        "mean_pred": 0.6933000087738037
+      }
+    ],
+    "industry": [
+      {
+        "g": "Healthcare",
+        "n": 48,
+        "pos_rate": 0.3333,
+        "mean_pred": 0.435699999332428
+      },
+      {
+        "g": "Consumer",
+        "n": 99,
+        "pos_rate": 0.2323,
+        "mean_pred": 0.483599990606308
+      },
+      {
+        "g": "Industrials",
+        "n": 26,
+        "pos_rate": 0.3846,
+        "mean_pred": 0.5156999826431274
+      },
+      {
+        "g": "Real Estate and Construction",
+        "n": 21,
+        "pos_rate": 0.3333,
+        "mean_pred": 0.5875999927520752
+      },
+      {
+        "g": "Education",
+        "n": 12,
+        "pos_rate": 0.25,
+        "mean_pred": 0.5889000296592712
+      },
+      {
+        "g": "B2B",
+        "n": 255,
+        "pos_rate": 0.4902,
+        "mean_pred": 0.6194999814033508
+      },
+      {
+        "g": "Fintech",
+        "n": 61,
+        "pos_rate": 0.4262,
+        "mean_pred": 0.6331999897956848
+      }
+    ],
+    "one_liner_len": [
+      {
+        "g": "low",
+        "n": 175,
+        "pos_rate": 0.3943,
+        "mean_pred": 0.5157999992370605
+      },
+      {
+        "g": "high",
+        "n": 174,
+        "pos_rate": 0.3966,
+        "mean_pred": 0.5442000031471252
+      },
+      {
+        "g": "mid",
+        "n": 174,
+        "pos_rate": 0.4138,
+        "mean_pred": 0.65420001745224
+      }
+    ],
+    "is_remote": [
+      {
+        "g": "0",
+        "n": 128,
+        "pos_rate": 0.3516,
+        "mean_pred": 0.35370001196861267
+      },
+      {
+        "g": "1",
+        "n": 395,
+        "pos_rate": 0.4177,
+        "mean_pred": 0.6417999863624573
+      }
+    ]
+  }
+}
