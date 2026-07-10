@@ -1,0 +1,94 @@
+{
+  "holdout_n": 523,
+  "holdout_base_rate": 0.40152963671128106,
+  "variants": {
+    "struct": {
+      "temporal_cv_auc_pooled": 0.6372,
+      "holdout_auc": 0.5664,
+      "holdout_pr_auc": 0.4585,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.52,
+          "lift_vs_random": 1.299,
+          "p_value": 0.1495
+        },
+        "53": {
+          "model_success_rate": 0.5094,
+          "lift_vs_random": 1.27,
+          "p_value": 0.0608
+        },
+        "100": {
+          "model_success_rate": 0.48,
+          "lift_vs_random": 1.195,
+          "p_value": 0.0482
+        }
+      }
+    },
+    "struct_fadv": {
+      "temporal_cv_auc_pooled": 0.6407,
+      "holdout_auc": 0.5652,
+      "holdout_pr_auc": 0.4771,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.56,
+          "lift_vs_random": 1.399,
+          "p_value": 0.0713
+        },
+        "53": {
+          "model_success_rate": 0.566,
+          "lift_vs_random": 1.412,
+          "p_value": 0.0084
+        },
+        "100": {
+          "model_success_rate": 0.54,
+          "lift_vs_random": 1.345,
+          "p_value": 0.0013
+        }
+      }
+    },
+    "struct_fadv_minilm": {
+      "temporal_cv_auc_pooled": 0.6097,
+      "holdout_auc": 0.5592,
+      "holdout_pr_auc": 0.489,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.72,
+          "lift_vs_random": 1.799,
+          "p_value": 0.0013
+        },
+        "53": {
+          "model_success_rate": 0.6226,
+          "lift_vs_random": 1.553,
+          "p_value": 0.0007
+        },
+        "100": {
+          "model_success_rate": 0.54,
+          "lift_vs_random": 1.345,
+          "p_value": 0.0013
+        }
+      }
+    },
+    "fadv": {
+      "temporal_cv_auc_pooled": 0.5304,
+      "holdout_auc": 0.5041,
+      "holdout_pr_auc": 0.4023,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.36,
+          "lift_vs_random": 0.899,
+          "p_value": 0.7315
+        },
+        "53": {
+          "model_success_rate": 0.3396,
+          "lift_vs_random": 0.847,
+          "p_value": 0.8686
+        },
+        "100": {
+          "model_success_rate": 0.38,
+          "lift_vs_random": 0.946,
+          "p_value": 0.724
+        }
+      }
+    }
+  }
+}

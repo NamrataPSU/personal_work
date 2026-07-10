@@ -1,0 +1,61 @@
+column,role,description,leakage_risk,justification
+id,metadata,YC company id,none,identifier/bookkeeping
+name,metadata,company name,none,identifier/bookkeeping
+batch,metadata,raw batch label,none,identifier/bookkeeping
+status,metadata,raw outcome (label source),none,identifier/bookkeeping
+batch_date,metadata,batch-derived metadata; not a model feature,none,identifier/bookkeeping
+batch_year,metadata,batch-derived metadata; not a model feature,none,identifier/bookkeeping
+company_age_years,metadata,age as of 2026-07-02; batch-derived metadata; not a model feature,none,identifier/bookkeeping
+is_mature,metadata,batch_date <= 2021-07-02; defines labeled population,none,identifier/bookkeeping
+label_strict,label,"1=Acquired|Public, 0=Inactive, NaN=Active/immature",none,target
+label_survival,label,"1=Acquired|Public|Active(mature), 0=Inactive",none,target
+batch_season,feature_categorical,Winter/Spring/Summer/Fall,none,fixed at admission
+cohort_size,feature_numeric,companies in same batch,none,fixed at admission; timing/competition signal
+industry,feature_categorical,9 industries,low,could reflect a post-batch pivot but usually stable
+subindustry,feature_categorical,59 subindustries,low,same as industry
+n_industries,feature_numeric,len(industries list),low,same as industry
+n_tags,feature_numeric,raw tag count,low,"tags curated over time but describe the business, not outcome"
+tag_ai,feature_numeric,tag indicator: AI (merged AI/Artificial Intelligence/Generative AI),low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_saas,feature_numeric,tag indicator: SaaS,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_b2b,feature_numeric,tag indicator: B2B,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_fintech,feature_numeric,tag indicator: Fintech,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_developer_tools,feature_numeric,tag indicator: Developer Tools,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_marketplace,feature_numeric,tag indicator: Marketplace,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_consumer,feature_numeric,tag indicator: Consumer,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_machine_learning,feature_numeric,tag indicator: Machine Learning,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_healthcare,feature_numeric,tag indicator: Healthcare,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_e_commerce,feature_numeric,tag indicator: E-commerce,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_analytics,feature_numeric,tag indicator: Analytics,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_health_tech,feature_numeric,tag indicator: Health Tech,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_education,feature_numeric,tag indicator: Education,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_productivity,feature_numeric,tag indicator: Productivity,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_open_source,feature_numeric,tag indicator: Open Source,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_ai_assistant,feature_numeric,tag indicator: AI Assistant,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_payments,feature_numeric,tag indicator: Payments,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_climate,feature_numeric,tag indicator: Climate,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_api,feature_numeric,tag indicator: API,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_biotech,feature_numeric,tag indicator: Biotech,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_hardware,feature_numeric,tag indicator: Hardware,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_logistics,feature_numeric,tag indicator: Logistics,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_sales,feature_numeric,tag indicator: Sales,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_enterprise_software,feature_numeric,tag indicator: Enterprise Software,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+tag_digital_health,feature_numeric,tag indicator: Digital Health,low,tags may be retagged post-hoc (esp. AI) but not outcome-derived
+primary_region,feature_categorical,first non-Remote/meta region,none,fixed at admission
+is_us,feature_numeric,location flag (is_us),low,location at listing; companies occasionally relocate
+is_remote,feature_numeric,location flag (is_remote),low,location at listing; companies occasionally relocate
+is_bay_area,feature_numeric,location flag (is_bay_area),low,location at listing; companies occasionally relocate
+is_international,feature_numeric,location flag (is_international),low,location at listing; companies occasionally relocate
+has_location,feature_numeric,location flag (has_location),low,location at listing; companies occasionally relocate
+one_liner_len,feature_numeric,chars in one_liner,medium,one_liner describes CURRENT product; dead cos may have stale/empty text
+long_description_len,feature_numeric,chars in long_description,medium,same; some descriptions literally say 'Acquired by X'
+has_description,feature_numeric,long_description non-empty,medium,empty text correlates with defunct listings
+text_clean,feature_text,"one_liner + long_description, whitespace-normalized",medium,current-day text; modeling agent should ablate
+has_former_names,feature_numeric,any former names listed,low,mostly legal-name variants; pivots add names post-batch
+nonprofit,feature_numeric,nonprofit flag,none,fixed at admission
+app_video_public,feature_numeric,application video public,low,video recorded pre-batch; publishing choice may come later
+demo_day_video_public,feature_numeric,demo day video public,low,demo-day video is early-stage (end of batch); publishing choice may come later
+leaky_team_size,leaky_diagnostic,CURRENT headcount,high,"reflects outcome (0/NaN for dead cos, large for winners)"
+leaky_stage,leaky_diagnostic,CURRENT stage Early/Growth,high,outcome proxy
+leaky_is_hiring,leaky_diagnostic,currently hiring,high,only live companies hire
+leaky_top_company,leaky_diagnostic,YC 'top company' badge,high,post-hoc success designation
+leaky_launched_at,leaky_diagnostic,directory listing/launch timestamp,high,"floors at 2010 (directory age, not founding); also updated on relaunches"

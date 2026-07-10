@@ -1,0 +1,185 @@
+{
+  "founder_coverage_strict": 0.9784,
+  "holdout_n": 523,
+  "holdout_base_rate": 0.40152963671128106,
+  "variants": {
+    "struct": {
+      "temporal_cv_auc_pooled": 0.6372,
+      "temporal_cv_auc_folds": [
+        0.5695,
+        0.6431,
+        0.6922,
+        0.6502,
+        0.7196
+      ],
+      "holdout_auc": 0.5664,
+      "holdout_pr_auc": 0.4585,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.52,
+          "lift_vs_random": 1.299,
+          "p_value": 0.1495
+        },
+        "53": {
+          "model_success_rate": 0.5094,
+          "lift_vs_random": 1.27,
+          "p_value": 0.0608
+        },
+        "100": {
+          "model_success_rate": 0.48,
+          "lift_vs_random": 1.195,
+          "p_value": 0.0482
+        }
+      }
+    },
+    "struct_founders": {
+      "temporal_cv_auc_pooled": 0.644,
+      "temporal_cv_auc_folds": [
+        0.595,
+        0.6344,
+        0.6587,
+        0.7031,
+        0.7029
+      ],
+      "holdout_auc": 0.5726,
+      "holdout_pr_auc": 0.4655,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.48,
+          "lift_vs_random": 1.199,
+          "p_value": 0.2655
+        },
+        "53": {
+          "model_success_rate": 0.4528,
+          "lift_vs_random": 1.129,
+          "p_value": 0.2502
+        },
+        "100": {
+          "model_success_rate": 0.55,
+          "lift_vs_random": 1.37,
+          "p_value": 0.0005
+        }
+      }
+    },
+    "struct_minilm": {
+      "temporal_cv_auc_pooled": 0.5765,
+      "temporal_cv_auc_folds": [
+        0.5688,
+        0.5364,
+        0.6919,
+        0.6458,
+        0.7032
+      ],
+      "holdout_auc": 0.5635,
+      "holdout_pr_auc": 0.5007,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.76,
+          "lift_vs_random": 1.898,
+          "p_value": 0.0001
+        },
+        "53": {
+          "model_success_rate": 0.6226,
+          "lift_vs_random": 1.553,
+          "p_value": 0.0007
+        },
+        "100": {
+          "model_success_rate": 0.47,
+          "lift_vs_random": 1.17,
+          "p_value": 0.0757
+        }
+      }
+    },
+    "struct_founders_minilm": {
+      "temporal_cv_auc_pooled": 0.5676,
+      "temporal_cv_auc_folds": [
+        0.5083,
+        0.4942,
+        0.6897,
+        0.6385,
+        0.6455
+      ],
+      "holdout_auc": 0.5732,
+      "holdout_pr_auc": 0.5005,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.68,
+          "lift_vs_random": 1.699,
+          "p_value": 0.0039
+        },
+        "53": {
+          "model_success_rate": 0.6038,
+          "lift_vs_random": 1.506,
+          "p_value": 0.0007
+        },
+        "100": {
+          "model_success_rate": 0.52,
+          "lift_vs_random": 1.295,
+          "p_value": 0.0051
+        }
+      }
+    },
+    "minilm": {
+      "temporal_cv_auc_pooled": 0.5899,
+      "temporal_cv_auc_folds": [
+        0.5375,
+        0.574,
+        0.6497,
+        0.6305,
+        0.6211
+      ],
+      "holdout_auc": 0.5406,
+      "holdout_pr_auc": 0.4638,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.56,
+          "lift_vs_random": 1.399,
+          "p_value": 0.0713
+        },
+        "53": {
+          "model_success_rate": 0.4906,
+          "lift_vs_random": 1.224,
+          "p_value": 0.0608
+        },
+        "100": {
+          "model_success_rate": 0.51,
+          "lift_vs_random": 1.27,
+          "p_value": 0.0098
+        }
+      }
+    },
+    "founders": {
+      "temporal_cv_auc_pooled": 0.5752,
+      "temporal_cv_auc_folds": [
+        0.6345,
+        0.5289,
+        0.5693,
+        0.6167,
+        0.5865
+      ],
+      "holdout_auc": 0.5324,
+      "holdout_pr_auc": 0.4222,
+      "portfolios": {
+        "25": {
+          "model_success_rate": 0.44,
+          "lift_vs_random": 1.099,
+          "p_value": 0.4182
+        },
+        "53": {
+          "model_success_rate": 0.434,
+          "lift_vs_random": 1.082,
+          "p_value": 0.2502
+        },
+        "100": {
+          "model_success_rate": 0.42,
+          "lift_vs_random": 1.046,
+          "p_value": 0.3812
+        }
+      }
+    }
+  },
+  "diagnostic_inactive_founders_present_vs_not_success_rate": {
+    "False": 0.5613,
+    "True": 0.2866
+  }
+}

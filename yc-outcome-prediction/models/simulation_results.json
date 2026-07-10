@@ -1,0 +1,259 @@
+{
+  "holdout_n": 523,
+  "holdout_base_rate": 0.40152963671128106,
+  "n_simulations": 20000,
+  "variants": {
+    "logit_struct": {
+      "holdout_auc": 0.5463,
+      "holdout_pr_auc": 0.4371,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.5,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 1.247,
+          "pct_of_random_draws_beaten": 63.06,
+          "p_value_random_geq_model": 0.3695
+        },
+        "25": {
+          "model_success_rate": 0.44,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 1.095,
+          "pct_of_random_draws_beaten": 57.78,
+          "p_value_random_geq_model": 0.4222
+        },
+        "53": {
+          "model_success_rate": 0.434,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 1.082,
+          "pct_of_random_draws_beaten": 64.66,
+          "p_value_random_geq_model": 0.3534
+        },
+        "100": {
+          "model_success_rate": 0.45,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.12,
+          "pct_of_random_draws_beaten": 83.73,
+          "p_value_random_geq_model": 0.1628
+        }
+      }
+    },
+    "xgb_struct": {
+      "holdout_auc": 0.5664,
+      "holdout_pr_auc": 0.4585,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.4,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 0.997,
+          "pct_of_random_draws_beaten": 37.6,
+          "p_value_random_geq_model": 0.624
+        },
+        "25": {
+          "model_success_rate": 0.52,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 1.294,
+          "pct_of_random_draws_beaten": 84.89,
+          "p_value_random_geq_model": 0.1511
+        },
+        "53": {
+          "model_success_rate": 0.5094,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 1.27,
+          "pct_of_random_draws_beaten": 93.75,
+          "p_value_random_geq_model": 0.0625
+        },
+        "100": {
+          "model_success_rate": 0.48,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.195,
+          "pct_of_random_draws_beaten": 95.25,
+          "p_value_random_geq_model": 0.0476
+        }
+      }
+    },
+    "xgb_struct_lsa": {
+      "holdout_auc": 0.5582,
+      "holdout_pr_auc": 0.4731,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.6,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 1.496,
+          "pct_of_random_draws_beaten": 83.41,
+          "p_value_random_geq_model": 0.1659
+        },
+        "25": {
+          "model_success_rate": 0.56,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 1.394,
+          "pct_of_random_draws_beaten": 92.36,
+          "p_value_random_geq_model": 0.0764
+        },
+        "53": {
+          "model_success_rate": 0.566,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 1.411,
+          "pct_of_random_draws_beaten": 99.33,
+          "p_value_random_geq_model": 0.0067
+        },
+        "100": {
+          "model_success_rate": 0.5,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.245,
+          "pct_of_random_draws_beaten": 98.23,
+          "p_value_random_geq_model": 0.0176
+        }
+      }
+    },
+    "xgb_lsa": {
+      "holdout_auc": 0.5703,
+      "holdout_pr_auc": 0.4676,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.8,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 1.995,
+          "pct_of_random_draws_beaten": 98.89,
+          "p_value_random_geq_model": 0.0111
+        },
+        "25": {
+          "model_success_rate": 0.64,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 1.593,
+          "pct_of_random_draws_beaten": 98.87,
+          "p_value_random_geq_model": 0.0113
+        },
+        "53": {
+          "model_success_rate": 0.5094,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 1.27,
+          "pct_of_random_draws_beaten": 93.75,
+          "p_value_random_geq_model": 0.0625
+        },
+        "100": {
+          "model_success_rate": 0.44,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.095,
+          "pct_of_random_draws_beaten": 77.48,
+          "p_value_random_geq_model": 0.2253
+        }
+      }
+    },
+    "xgb_struct_w2v": {
+      "holdout_auc": 0.5716,
+      "holdout_pr_auc": 0.4706,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.7,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 1.745,
+          "pct_of_random_draws_beaten": 94.6,
+          "p_value_random_geq_model": 0.0539
+        },
+        "25": {
+          "model_success_rate": 0.52,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 1.294,
+          "pct_of_random_draws_beaten": 84.89,
+          "p_value_random_geq_model": 0.1511
+        },
+        "53": {
+          "model_success_rate": 0.5283,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 1.317,
+          "pct_of_random_draws_beaten": 96.61,
+          "p_value_random_geq_model": 0.0339
+        },
+        "100": {
+          "model_success_rate": 0.5,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.245,
+          "pct_of_random_draws_beaten": 98.23,
+          "p_value_random_geq_model": 0.0176
+        }
+      }
+    },
+    "xgb_w2v": {
+      "holdout_auc": 0.566,
+      "holdout_pr_auc": 0.452,
+      "portfolios": {
+        "10": {
+          "model_success_rate": 0.6,
+          "random_mean": 0.4011,
+          "random_p05": 0.2,
+          "random_p95": 0.7,
+          "lift_vs_random": 1.496,
+          "pct_of_random_draws_beaten": 83.41,
+          "p_value_random_geq_model": 0.1659
+        },
+        "25": {
+          "model_success_rate": 0.36,
+          "random_mean": 0.4018,
+          "random_p05": 0.24,
+          "random_p95": 0.56,
+          "lift_vs_random": 0.896,
+          "pct_of_random_draws_beaten": 26.14,
+          "p_value_random_geq_model": 0.7387
+        },
+        "53": {
+          "model_success_rate": 0.3208,
+          "random_mean": 0.4012,
+          "random_p05": 0.3019,
+          "random_p95": 0.5094,
+          "lift_vs_random": 0.799,
+          "pct_of_random_draws_beaten": 7.69,
+          "p_value_random_geq_model": 0.9231
+        },
+        "100": {
+          "model_success_rate": 0.44,
+          "random_mean": 0.4016,
+          "random_p05": 0.33,
+          "random_p95": 0.47,
+          "lift_vs_random": 1.095,
+          "pct_of_random_draws_beaten": 77.48,
+          "p_value_random_geq_model": 0.2253
+        }
+      }
+    }
+  }
+}

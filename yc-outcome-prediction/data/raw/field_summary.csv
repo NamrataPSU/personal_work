@@ -1,0 +1,30 @@
+field,dtype,n_missing,pct_missing,n_empty_string,n_empty_list,n_unique,example_values,role
+id,int64 (int),0,0.0,0,0,5999,5; 6; 7,identifier
+name,str (str),0,0.0,0,0,5904,'CircuitHub'; 'iCracked'; '42Floors',identifier
+slug,str (str),0,0.0,0,0,5999,'circuithub'; 'icracked'; '42floors',identifier
+former_names,object (list),0,0.0,0,3091,2898,[]; ['Nou Data']; ['Pair'],feature-candidate (weak; pivot signal)
+small_logo_thumb_url,str (str),0,0.0,0,0,5371,'https://bookface-images.s3.amazonaws.com/small_logos/5967d0; '/company/thumb/missing.png'; 'https://bookface-images.s3.amazonaws.com/small_logos/33ee27,identifier/URL
+website,str (str),1,0.02,33,0,5962,'https://circuithub.com'; 'http://icracked.com'; 'http://42floors.com',identifier/URL (presence/liveness could be outcome-adjacent)
+all_locations,str (str),0,0.0,229,0,732,"'London, England, United Kingdom'; 'Redwood City, CA, USA'; 'San Francisco, CA, USA; Remote'",feature-candidate (location at listing; mostly stable)
+long_description,str (str),30,0.5,370,0,5599,"'CircuitHub offers on-demand electronics manufacturing power; 'Founded in 2010 and located in the heart of Silicon Valley,; ""*Acquired by Knotel in 2018\r\n\r\n42Floors was founded in ",feature-candidate (text; describes CURRENT product — mild leakage risk)
+one_liner,str (str),0,0.0,161,0,5838,'On-Demand Electronics Manufacturing'; 'On-demand smartphone repair in 3 countries and launching sm; 'We make it easy to search for office space.',feature-candidate (text; same caveat)
+team_size,float64 (float),104,1.73,0,0,201,58.0; 51.0; 60.0,"LEAKY/outcome-adjacent (CURRENT headcount reflects outcome, not starting state)"
+industry,str (str),0,0.0,0,0,9,'Industrials'; 'Consumer'; 'Real Estate and Construction',feature-candidate
+subindustry,str (str),0,0.0,0,0,59,'Industrials -> Manufacturing and Robotics'; 'Consumer -> Home and Personal'; 'Real Estate and Construction -> Housing and Real Estate',feature-candidate
+launched_at,int64 (int),0,0.0,0,0,5709,1322045523; 1322045532; 1322045536,feature-candidate (launch timestamp; relative to batch = early-traction signal)
+tags,object (list),0,0.0,0,933,3682,"['Hard Tech', 'Hardware', 'Robotics', 'Manufacturing', 'Auto; []; ['Real Estate', 'Proptech']",feature-candidate
+tags_highlighted,object (list),0,0.0,0,5909,2,[]; ['Crypto / Web3'],identifier/derived (UI artifact of tags)
+top_company,object (bool),1,0.02,0,0,2,False; True,LEAKY (YC's post-hoc success designation)
+isHiring,bool (bool),0,0.0,0,0,2,True; False,LEAKY/outcome-adjacent (current hiring status)
+nonprofit,bool (bool),0,0.0,0,0,2,False; True,feature-candidate
+batch,str (str),0,0.0,0,0,50,'Winter 2012'; 'Unspecified'; 'Summer 2011',feature-candidate (cohort/vintage; also defines eval splits)
+status,str (str),0,0.0,0,0,4,'Active'; 'Acquired'; 'Inactive',TARGET (outcome label source)
+industries,object (list),0,0.0,0,0,59,"['Industrials', 'Manufacturing and Robotics']; ['Consumer', 'Home and Personal']; ['Real Estate and Construction', 'Housing and Real Estate']",feature-candidate (list form of industry+subindustry)
+regions,object (list),0,0.0,0,0,238,"['United Kingdom', 'Europe', 'Remote', 'Partly Remote']; ['United States of America', 'America / Canada']; ['United States of America', 'America / Canada', 'Remote', '",feature-candidate (includes Remote flags)
+stage,str (str),0,0.0,0,0,2,'Early'; 'Growth',LEAKY/outcome-adjacent (CURRENT funding stage = outcome proxy)
+app_video_public,bool (bool),0,0.0,0,0,2,False; True,feature-candidate (weak; disclosure choice)
+demo_day_video_public,bool (bool),0,0.0,0,0,2,False; True,feature-candidate (weak; disclosure choice)
+app_answers,object (bool),5920,98.68,0,0,2,True; False,feature-candidate (application answers; but ~all null)
+question_answers,bool (bool),0,0.0,0,0,2,False; True,identifier/flag (whether app_answers exist)
+url,str (str),0,0.0,0,0,5999,'https://www.ycombinator.com/companies/circuithub'; 'https://www.ycombinator.com/companies/icracked'; 'https://www.ycombinator.com/companies/42floors',identifier/URL
+api,str (str),0,0.0,0,0,5999,'https://yc-oss.github.io/api/batches/winter-2012/circuithub; 'https://yc-oss.github.io/api/batches/winter-2012/icracked.j; 'https://yc-oss.github.io/api/batches/winter-2012/42floors.j,identifier/URL
